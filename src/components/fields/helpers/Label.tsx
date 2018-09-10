@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 interface LabelProps {
   children: React.ReactNode
-  className?: string
+  className?: any
 }
 
 const LabelWrapper = styled.p`

@@ -1,5 +1,11 @@
 export interface TextFieldProps {
-  label?: string,
+  label?: string
+  onBlur: () => void
   onChange: (value: string) => void
-  value?: string,
+  onFocus: () => void
+  value?: string
+}
+
+export interface TextFieldState {
+  isFocussed: boolean
 }
