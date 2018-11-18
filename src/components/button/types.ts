@@ -1,4 +1,4 @@
-interface ButtonProps {
+export interface ButtonProps {
   buttonRef?: (ref: object) => void
   className?: string
   disabled?: boolean

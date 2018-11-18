@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { ButtonProps } from './types';
+
 const StyledLink = styled(Link)``;
 const StyledButton = styled.button``;
 
@@ -23,7 +25,7 @@ class Button extends React.PureComponent<ButtonProps, {}> {
         disabled={disabled}
         onClick={disabled ? undefined : onClick}
         type={type}>
-        <span>{icon}</span>‹
+        <span>{icon}</span>
         <span>{label}</span>
       </StyledButton>
   }
